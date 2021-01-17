@@ -1,0 +1,24 @@
+html{
+    background: url(./655045.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        
+}
+.masterdiv{
+    margin: 100px;
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: yellow;
+    border: 40px red solid;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    padding: 40px;
+    margin: 20px;
+    
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Ticket Booking
+        </title>
+    </head>
+    <link rel="stylesheet" href="./bstyles.css">
+    <body>        
+        <div class="masterdiv">
+            <form class="userform">
+                <h1>Book your ticket here</h1>               
+                <label id="nametxt">Name</label>
+                <br>
+                <input type="text" placeholder="First Name" id="fname">
+                <input type="text" placeholder="Last Name" id="lname">
+                <br>
+                <!-- mail format galat hone ka prompt nahi aa raha hai-->
+                <br>
+                <label id="mailtxt">E-Mail</label>
+                <br>
+                <input type="email" placeholder="E-Mail" id="mail">
+                <br>
+
+                <br>
+                <label id="cntxt">Contact Number</label>
+                <br>
+                <input type="text" placeholder="Contact No." id="cnum">
+                <br>
+
+                <br>                
+                <label id="agetxt">Age</label>
+                <br>
+                <input type="text" placeholder="Age" id="age">
+                <br>
+                <!-- address fields mein datalist dalna hai kya dorp down list type UX ke liye ?-->
+
+                <br>
+                <label id="adtxt">Address</label>
+                <br>
+                <input type="text" placeholder="Address line 1..." id="adl1">
+                <input type="text" placeholder="Address line 2..." id="adl2"><br>
+                <input type="text" placeholder="City" id="city">
+                <input type="text" placeholder="District" id="ditc"><br>
+                <input type="text" placeholder="State" id="stt">
+                <input type="text" placeholder="Country" id="cty"><br>
+                <input type="text" placeholder="Pincode" id="pcd">
+                <br>
+
+                <br>
+                <label class="dpla">Select your destination planet</label>
+                <br>
+                <input type="radio" id="mars" name="dpl">
+                <label for="mars">Mars</label>
+                <br>
+                <input type="radio" id="venus" name="dpl">
+                <label for="venus">Venus</label>
+                <br>
+                <input type="radio" id="kep6f" name="dpl">
+                <label for="kep6f">Kepler-62f</label>
+                <br>
+                <input type="radio" id="kep1f" name="dpl">
+                <label for="kep1f">Kepler-186f</label>
+                <br>
+                <input type="radio" id="kep4b" name="dpl">
+                <label for="kep4b">Kepler-442b</label>
+                <br>
+
+                <br>
+                <label>Select your launch station</label>
+                <br>
+                <input type="radio" id="lst1" name="lsta">
+                <label for="lst1">Sriharikota, Andhra Pradesh, India</label>                
+                <br>
+                <input type="radio" id="lst2" name="lsta">
+                <label for="lst2">Cape Canaveral Space Force Station, Florida, USA</label>                
+                <br>
+                <input type="radio" id="lst3" name="lsta">
+                <label for="lst3">Vostochny Cosmodrome, Amur Oblast, Russia</label>
+                <br>
+                <input type="radio" id="lst4" name="lsta">
+                <label for="lst4">Tanegashima Space Center, Tanegashima Island, Japan</label>
+                <br>
+                <input type="radio" id="lst5" name="lsta">
+                <label for="lst5">Naro Space Center, Gohueng, South Korea</label>
+                <br>
+                <input type="radio" id="lst6" name="lsta">
+                <label for="lst6">Rocket Launch Site Berlin, Germany</label>
+                <br>
+
+                <br>
+                <label>Select your travel package</label>
+                <br>
+                <input type="radio" id="tp1" name="trapak">
+                <label for="tp1">Economy<br></label>
+                <input type="radio" id="tp2" name="trapak">
+                <label for="tp2">Executive/Business<br></label>
+                <input type="radio" id="tp3" name="trapak">
+                <label for="tp3">Premium<br></label>
+                <input type="radio" id="tp4" name="trapak">
+                <label for="tp4">VIP<br></label>
+                <br>                
+
+                <br>
+                <label>Choose your transaction medium</label>
+                <br>
+                <input type="radio" id="tm1" name="tramed">
+                <label for="tm1">Debit Card</label><br>                    
+                <input type="radio" id="tm2" name="tramed">
+                <label for="tm2">Credit Card</label><br>
+                <input type="radio" id="tm3" name="tramed">
+                <label for="tm3">Bitcoin (BTC)</label><br>
+                <input type="radio" id="tm4" name="tramed">
+                <label for="tm4">Bitcoin Cash (BCH)</label><br>
+                <input type="radio" id="tm5" name="tramed">
+                <label for="tm5">Ethereum(ETH)</label><br>
+                <br>
+
+                <br>
+                <label>Travel History<br>Have you ever been on a space travel before?</label><br>
+                <input type="radio" id="th1" name="trhis">
+                <label for="th1">Yes</label>
+                <input type="radio" id="th2" name="trhis">
+                <label for="th2">No</label>
+                <br>
+
+                <br>
+                <input type="checkbox" id="chb">
+                <label for="chb">Click to agree to the flight T&C</label>
+                <br>                
+            </form>
+            <br>
+                <a href="Sample Ticket.html" class="tlink">Confirm Booking</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="HomePageStyle.css">
+        <title>Odyssey Space Travels</title>
+    </head>
+    <body>
+      <section class="MainHomeStyle">
+            <header>
+            <h1 class="logo">HOME</h1>
+            <div class="toggle triggerJS"></div>
+            </header>
+            <video src="/Assests/New video2.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+            <h2>Odyssey Space Travels</h2>
+            <h3>Make Your Next Trip,</h3>
+            <h3>Out of this World.</h3>
+            <br></br>  
+            <a href="Terms & Conditions.html"><b>Learn More</b></a>
+            </div>
+            <ul class="social">
+            <li><a href="https://www.facebook.com/abhinaw.gupta.3766/"><img src="Assests\facebook_20.png"></a></li>
+            <li><a href="https://www.instagram.com/wicked.boii.420/"><img src="Assests\instagram_20.png"></a></li>
+            <li><a href="https://twitter.com/SpaceX"><img src="Assests\twitter_20.png"></a></li>
+            <li><a href="mailto: sahilaktar_20490@aitpune.edu.in"><img src="Assests\email_20.png"></a></li>
+            </ul>
+      </section>
+      <div class="menu">
+            <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Our Space Shuttles.html">Space Shuttles</a></li>
+            <li><a href="Terms & Conditions.html">Travel T&Cs</a></li>
+            <li><a href="Travel Gallery.html">Gallery</a></li>
+            <li><a href="Ticket Booking.html">Book Tickets</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            </ul> 
+      </div>
+      <script>
+            const menuToggle = document.querySelector('.toggle'); //selecting the toggle class
+            const MainHomeStyle = document.querySelector('.MainHomeStyle'); //selecting the MainHomeStyle class
+            menuToggle.addEventListener
+            ('click', function(){ //use a function classlist to switch the Menu and HomeStyle 
+            menuToggle.classList.toggle('triggerJS'); //using .toggle function in classlist function
+            MainHomeStyle.classList.toggle('triggerJS'); //using .toggle function in classlist function
+        })
+      </script>
+    </body>
+ </html>

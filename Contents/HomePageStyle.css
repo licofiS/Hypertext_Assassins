@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* importing different Poppins Font styles from google fonts */
+*
+{
+  margin: 0; /*setting no margins and padding*/
+  padding: 0;
+  box-sizing: border-box; /*no effect on sizing*/
+  font-family: 'Poppins', sans-serif;
+  /*calling the poppins family and sans-serif font*/
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /*Full 100% spanning*/
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex; /*Flexing for Alignment of both Home Title and MenuBar Icon*/
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff; /*Font Color*/
+  text-transform: uppercase; /*All letters capital*/
+  cursor: pointer;
+}
+.toggle
+{
+  position: relative; /*Pos. releative to the main header*/
+  width: 60px;
+  height: 60px;
+  background: url(close-window-64.png); /*CLose Icon for opened toggle menu*/
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer; /*HyperlinkLink reference pointer*/
+}
+.toggle.triggerJS
+{
+  background: url(menu-4-128.png); /*Default is Active and shows Menu Icon*/
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.MainHomeStyle
+{
+  position: absolute; /*absolute position for MainHomeStyle class*/
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex; /*for Proper Alignment*/
+  justify-content: space-between; /*Space Distribution*/
+  align-items: center;
+  background: #111; /*Default BG*/
+  transition: 1s;
+  z-index: 2; /*always in foreground of the menu*/
+}
+.MainHomeStyle.triggerJS
+{
+  right: 300px; /*shifting menu tab right by 
+  300px*/
+}
+.MainHomeStyle video
+{
+  position: absolute;
+  top: 0;   
+  left: 0; /*Pos Topleft corner*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Cover the whole page*/
+  opacity: 0.75;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1cb5fd; 
+  mix-blend-mode: overlay; /*overlay blends in with the video*/
+}
+.text
+{
+  position: relative;
+  z-index: 10; /* Main logo Text on Top*/
+}
+.text h2
+{
+  font-size: 5em; /*Font Multiplier*/
+  font-weight: 700; /*Boldness of text*/
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 3em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1em; /*Line gaps btw words*/
+  text-transform: uppercase;
+}
+.text p /*Adding future paragraphs in site.*/ 
+{
+  font-size: 1.5em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px; /*Limit the width*/
+}
+.text a
+{
+  display: inline-block; /*Displayed inside a box*/
+  font-size: 1.5em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px; /*Inital non hovered text*/
+  transition: 0.2s; /*hovering time transition*/
+}
+.text a:hover
+{
+  letter-spacing: 5px;
+}
+.social
+{
+  position: absolute;
+  z-index: 100;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px; /*Spacing the social icons*/
+  filter: invert(1); /*Inverting the color of icons*/
+  transform: scale(0.5);
+  transition: 0.5s; /*Transition speed*/
+}
+.social li a:hover
+{
+  transform: scale(0.7) translateY(-15px); /*Apply Upside Hover*/
+}
+.menu
+{
+  position: absolute; 
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex; /*Positions with equal spacing both vertically and horizontally.*/
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none; /*Delete bullets in list style*/
+}
+.menu ul li a /*Styling link*/
+{
+  text-decoration: none; /*No underlines*/
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.menu ul li a:hover
+{
+  color: #1cb5fd; /*Same Overlay color*/ 
+}

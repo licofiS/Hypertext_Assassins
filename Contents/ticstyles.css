@@ -1,0 +1,38 @@
+.masterdiv{
+    margin: 100px;
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: yellow;
+    border: 40px red solid;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-size: larger
+}
+.hdtxt{
+    font-size: 50px;
+}
+.paratxt{
+    font-size: 50px;
+    
+}
+.clktxt{
+    font-size: 30px;
+}
+.tlink{
+    padding: 10px;
+    background-color: pink;
+    font-size: larger;
+    border-radius: 5px;
+}
+.bgimg{
+    background: url(655045.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);    
+}
